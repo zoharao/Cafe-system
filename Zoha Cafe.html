@@ -1,0 +1,1121 @@
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Zoha Restaurant</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header class="header">
+
+    <h1>Zoha Restaurant</h1>
+
+    <!-- TASK 8: DYNAMIC OPENING STATUS -->
+    <p id="opening-status">Checking opening status...</p>
+
+    <p>
+        Delicious Food, Great Taste
+        <br>
+        Welcome to our family restaurant
+    </p>
+
+    <!-- TASK 3: THEME SWITCHER -->
+    <button id="theme-button">
+        Toggle Light/Dark Mode
+    </button>
+
+</header>
+
+
+
+<!-- ================================================= -->
+<!-- NAVIGATION -->
+<!-- ================================================= -->
+
+<nav class="navbar">
+
+    <ul>
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#menu">Menu</a>
+        </li>
+
+        <li>
+            <a href="#about">About Us</a>
+        </li>
+
+        <li>
+            <a href="#prices">Prices</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- ================================================= -->
+<!-- IMAGE -->
+<!-- ================================================= -->
+
+<section class="image-section">
+
+    <img src="img/images.jpg" alt="Zoha Restaurant">
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- MAIN CONTENT -->
+<!-- ================================================= -->
+
+<main class="main">
+
+
+<!-- ================================================= -->
+<!-- HOME -->
+<!-- ================================================= -->
+
+<section class="home" id="home">
+
+    <h2>Fresh Food for Everyone</h2>
+
+    <p>
+        Welcome to Zoha Restaurant. We serve fresh,
+        delicious and high-quality food for our customers.
+    </p>
+
+    <p>
+        Our restaurant offers a comfortable environment
+        where families and friends can enjoy delicious meals.
+    </p>
+
+    <h3>Why Visit Zoha Restaurant?</h3>
+
+    <ul>
+
+        <li>Fresh Ingredients</li>
+
+        <li>Great Taste</li>
+
+        <li>Comfortable Environment</li>
+
+        <li>Family Dining</li>
+
+        <li>Quality Service</li>
+
+    </ul>
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- ABOUT -->
+<!-- ================================================= -->
+
+<section class="about" id="about">
+
+    <h2>Get to Know Our Restaurant</h2>
+
+
+    <article>
+
+        <h3>Our Service</h3>
+
+        <p>
+            We provide dine-in, takeaway and family dining
+            services for our customers.
+        </p>
+
+    </article>
+
+
+
+    <article>
+
+        <h3>Our Speciality</h3>
+
+        <p>
+            We specialize in Pakistani, Chinese and fast-food
+            dishes prepared with fresh ingredients.
+        </p>
+
+    </article>
+
+
+
+    <article>
+
+        <h3>Our Story</h3>
+
+        <p>
+            Zoha Restaurant was created with the goal of
+            providing delicious food and excellent service
+            to our customers.
+        </p>
+
+        <!-- TASK 6: EXTRA PARAGRAPH -->
+
+        <p id="extra-story" class="hidden">
+
+            We always try to provide fresh food, friendly
+            service and a comfortable environment for our
+            customers. Our goal is to make every visit
+            enjoyable and memorable.
+
+        </p>
+
+        <!-- TASK 6: READ MORE BUTTON -->
+
+        <button id="read-more-button">
+            Read More
+        </button>
+
+    </article>
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- MENU -->
+<!-- ================================================= -->
+
+<section class="menu" id="menu">
+
+    <h2>What We Serve</h2>
+
+    <p>
+        Explore some of the popular food choices available
+        at Zoha Restaurant.
+    </p>
+
+
+    <!-- TASK 7: CATEGORY FILTER -->
+
+    <h3>Menu Category Filter</h3>
+
+    <button class="filter-button" data-category="All">
+        All
+    </button>
+
+    <button class="filter-button" data-category="Drinks">
+        Drinks
+    </button>
+
+    <button class="filter-button" data-category="Pastries">
+        Pastries
+    </button>
+
+
+
+    <!-- TASK 2 + TASK 7: MENU TABLE -->
+
+    <h3>Menu Table</h3>
+
+    <table id="menu-table" border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>Food Item</th>
+
+                <th>Price</th>
+
+                <th>Category</th>
+
+                <th>Availability</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+
+            <tr data-category="Meals">
+
+                <td>Chicken Biryani</td>
+
+                <td>Rs. 350</td>
+
+                <td>Meals</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr data-category="Meals">
+
+                <td>Chicken Karahi</td>
+
+                <td>Rs. 1200</td>
+
+                <td>Meals</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr data-category="Meals">
+
+                <td>Chicken Burger</td>
+
+                <td>Rs. 450</td>
+
+                <td>Meals</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr data-category="Meals">
+
+                <td>Chicken Pizza</td>
+
+                <td>Rs. 1400</td>
+
+                <td>Meals</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <!-- DRINKS -->
+
+            <tr data-category="Drinks">
+
+                <td>Espresso</td>
+
+                <td>Rs. 300</td>
+
+                <td>Drinks</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr data-category="Drinks">
+
+                <td>Fresh Juice</td>
+
+                <td>Rs. 250</td>
+
+                <td>Drinks</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <!-- PASTRIES -->
+
+            <tr data-category="Pastries">
+
+                <td>Croissant</td>
+
+                <td>Rs. 400</td>
+
+                <td>Pastries</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr data-category="Pastries">
+
+                <td>Chocolate Cake</td>
+
+                <td>Rs. 600</td>
+
+                <td>Pastries</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- SPECIAL DISHES -->
+<!-- ================================================= -->
+
+<section class="special-dishes">
+
+    <h2>Special Dishes</h2>
+
+
+    <ol type="A">
+
+        <li>Special Chicken Biryani</li>
+
+        <li>Traditional Chicken Karahi</li>
+
+        <li>Cheese Chicken Burger</li>
+
+        <li>Special Chicken Pizza</li>
+
+        <li>Fresh Mango Juice</li>
+
+    </ol>
+
+
+
+    <!-- TASK 4: ORDER TOTAL CALCULATOR -->
+
+    <h3>Select Your Cafe Items</h3>
+
+
+    <p>
+
+        <label>
+
+            <input
+                type="checkbox"
+                class="menu-item"
+                value="300"
+            >
+
+            Espresso - Rs. 300
+
+        </label>
+
+    </p>
+
+
+    <p>
+
+        <label>
+
+            <input
+                type="checkbox"
+                class="menu-item"
+                value="400"
+            >
+
+            Croissant - Rs. 400
+
+        </label>
+
+    </p>
+
+
+    <p>
+
+        <label>
+
+            <input
+                type="checkbox"
+                class="menu-item"
+                value="500"
+            >
+
+            Cappuccino - Rs. 500
+
+        </label>
+
+    </p>
+
+
+    <p>
+
+        <label>
+
+            <input
+                type="checkbox"
+                class="menu-item"
+                value="600"
+            >
+
+            Chocolate Cake - Rs. 600
+
+        </label>
+
+    </p>
+
+
+    <!-- TOTAL -->
+
+    <p id="total">
+
+        Total: Rs. 0
+
+    </p>
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- PRICES -->
+<!-- ================================================= -->
+
+<section class="prices" id="prices">
+
+    <h2>Our Food Prices</h2>
+
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>Food Item</th>
+
+                <th>Price</th>
+
+                <th>Category</th>
+
+                <th>Availability</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Chicken Biryani</td>
+
+                <td>Rs. 350</td>
+
+                <td>Pakistani</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Chicken Karahi</td>
+
+                <td>Rs. 1200</td>
+
+                <td>Pakistani</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Chicken Burger</td>
+
+                <td>Rs. 450</td>
+
+                <td>Fast Food</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Chicken Pizza</td>
+
+                <td>Rs. 1400</td>
+
+                <td>Fast Food</td>
+
+                <td>Available</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Fresh Juice</td>
+
+                <td>Rs. 250</td>
+
+                <td>Beverage</td>
+
+                <td>Available</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- ONLINE LINKS -->
+<!-- ================================================= -->
+
+<section class="links">
+
+    <h2>Connect With Us</h2>
+
+    <p>
+        Find Zoha Restaurant online using the links below.
+    </p>
+
+
+    <ul>
+
+        <li>
+
+            <a
+                href="https://www.google.com/maps"
+                target="_blank"
+            >
+
+                Find Us on Google Maps
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+            >
+
+                Visit Our Facebook Page
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+            >
+
+                Visit Our Instagram
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a
+                href="https://www.youtube.com/"
+                target="_blank"
+            >
+
+                Visit Our YouTube Channel
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- RESERVATION / CONTACT -->
+<!-- ================================================= -->
+
+<section id="contact" class="contact">
+
+    <h2>Make a Reservation</h2>
+
+    <p>
+
+        Fill in the information below to book a table
+        at Zoha Restaurant.
+
+    </p>
+
+
+
+    <!-- TASK 1: FORM -->
+
+    <form id="feedback-form">
+
+
+        <!-- BASIC INFORMATION -->
+
+        <fieldset>
+
+            <legend>Basic Information</legend>
+
+
+            <p>
+
+                <label for="username">
+
+                    Full Name:
+
+                </label>
+
+
+                <br>
+
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your name"
+                >
+
+            </p>
+
+
+
+            <p>
+
+                <label for="email">
+
+                    Email:
+
+                </label>
+
+
+                <br>
+
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+            </p>
+
+
+
+            <p>
+
+                <label for="phone">
+
+                    Phone:
+
+                </label>
+
+
+                <br>
+
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+            </p>
+
+
+
+            <!-- TASK 5: BIRTH YEAR -->
+
+            <p>
+
+                <label for="birth-year">
+
+                    Birth Year:
+
+                </label>
+
+
+                <br>
+
+
+                <input
+                    type="text"
+                    id="birth-year"
+                    name="birth-year"
+                    placeholder="Example: 2002"
+                >
+
+            </p>
+
+        </fieldset>
+
+
+
+        <br>
+
+
+
+        <!-- FOOD CHOICE -->
+
+        <fieldset>
+
+            <legend>Select Food Preferences</legend>
+
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="pakistani"
+                    name="food"
+                    value="pakistani"
+                >
+
+                <label for="pakistani">
+
+                    Pakistani Food
+
+                </label>
+
+            </p>
+
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="chinese"
+                    name="food"
+                    value="chinese"
+                >
+
+                <label for="chinese">
+
+                    Chinese Food
+
+                </label>
+
+            </p>
+
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="fastfood"
+                    name="food"
+                    value="fastfood"
+                >
+
+                <label for="fastfood">
+
+                    Fast Food
+
+                </label>
+
+            </p>
+
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="dessert"
+                    name="food"
+                    value="dessert"
+                >
+
+                <label for="dessert">
+
+                    Desserts
+
+                </label>
+
+            </p>
+
+        </fieldset>
+
+
+
+        <br>
+
+
+
+        <!-- DINING METHOD -->
+
+        <fieldset>
+
+            <legend>Choose Dining Method</legend>
+
+
+            <p>
+
+                <input
+                    type="radio"
+                    id="dinein"
+                    name="dining"
+                    value="dinein"
+                >
+
+                <label for="dinein">
+
+                    Dine In
+
+                </label>
+
+            </p>
+
+
+            <p>
+
+                <input
+                    type="radio"
+                    id="takeaway"
+                    name="dining"
+                    value="takeaway"
+                >
+
+                <label for="takeaway">
+
+                    Takeaway
+
+                </label>
+
+            </p>
+
+        </fieldset>
+
+
+
+        <br>
+
+
+
+        <!-- TASK 9: SPECIAL REQUEST -->
+
+        <fieldset>
+
+            <legend>Additional Request</legend>
+
+
+            <label for="special-notes">
+
+                Special Request:
+
+            </label>
+
+
+            <br><br>
+
+
+            <textarea
+                id="special-notes"
+                name="special-notes"
+                rows="6"
+                cols="50"
+                maxlength="100"
+                placeholder="Enter your special request"
+            ></textarea>
+
+
+            <!-- CHARACTER COUNTER -->
+
+            <p id="character-count">
+
+                100 characters remaining
+
+            </p>
+
+        </fieldset>
+
+
+
+        <br>
+
+
+        <input
+            type="submit"
+            value="Book a Table"
+        >
+
+
+        <input
+            type="reset"
+            value="Clear Form"
+        >
+
+
+    </form>
+
+
+    <!-- TASK 1: PERSONALIZED MESSAGE -->
+
+    <p id="form-message"></p>
+
+
+    <!-- TASK 5: DISCOUNT MESSAGE -->
+
+    <p id="discount-message"></p>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- ASIDE -->
+<!-- ================================================= -->
+
+<aside>
+
+    <h2>Quick Restaurant Details</h2>
+
+    <p>
+
+        Zoha Restaurant provides quality food and
+        comfortable family dining.
+
+    </p>
+
+
+    <ul>
+
+        <li>
+
+            <strong>Opening Hours:</strong>
+            11:00 AM - 11:00 PM
+
+        </li>
+
+
+        <li>
+
+            <strong>Phone:</strong>
+            0300-1234567
+
+        </li>
+
+
+        <li>
+
+            <strong>Location:</strong>
+            Islamabad, Pakistan
+
+        </li>
+
+    </ul>
+
+</aside>
+
+
+
+<hr>
+
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <h3>Zoha Restaurant</h3>
+
+    <p>
+
+        Delicious Food | Quality Service | Happy Customers
+
+    </p>
+
+    <p>
+
+        &copy; 2026 Zoha Restaurant
+
+    </p>
+
+</footer>
+
+
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT FILE -->
+<!-- ================================================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
